@@ -1,9 +1,9 @@
-const Task = require("../models/Task");
+const Task = require('../models/Task');
 
 exports.allTasks = async (_, res) => {
   try {
-    let posts = await Task.find();
-    res.status(200).json(posts);
+    let tasks = await Task.find();
+    res.status(200).json(tasks);
   } catch (err) {
     res.status(500).json(err);
   }
@@ -13,6 +13,7 @@ exports.addTask = async (req, res) => {
   try {
     const task = new Task({
       title: req.body.title,
+      category: req.body.category
     });
     let newTask = await task.save();
     res.status(200).json({ data: newTask });

@@ -8,6 +8,7 @@ const app = express();
 
 // routes
 var tasks = require('./api/routes/task');
+var categories = require('./api/routes/category');
 
 //configure database and mongoose
 mongoose.set('useCreateIndex', true);
@@ -29,6 +30,7 @@ app.use(express.json()) // To parse the incoming requests with JSON payloads
 app.use(morgan('dev'));
 
 app.use('/tasks', tasks);
+app.use('/categories', categories);
 
 app.listen(PORT, () => {
   console.log(`App is running on ${PORT}`);

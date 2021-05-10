@@ -5,6 +5,9 @@ let taskSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  category: {
+    type: String
+  },
   completed: {
     type: Boolean,
     default: false
@@ -14,5 +17,6 @@ let taskSchema = mongoose.Schema({
     default: Date.now()
   }
 });
-var Task = mongoose.model("Task", taskSchema);
+
+var Task = mongoose.model('Task', taskSchema);
 module.exports = Task;
