@@ -12,6 +12,10 @@ let taskSchema = mongoose.Schema({
     type: Boolean,
     default: false
   },
+  duration: {
+    hour: Number,
+    minute: Number
+  },
   created: {
     type: Date,
     default: Date.now()
