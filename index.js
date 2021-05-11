@@ -9,6 +9,8 @@ const app = express();
 // routes
 var tasks = require('./api/routes/task');
 var categories = require('./api/routes/category');
+var day = require('./api/routes/day');
+var slot = require('./api/routes/slot');
 
 //configure database and mongoose
 mongoose.set('useCreateIndex', true);
@@ -31,6 +33,8 @@ app.use(morgan('dev'));
 
 app.use('/tasks', tasks);
 app.use('/categories', categories);
+app.use('/day', day);
+app.use('/slots', slot);
 
 app.listen(PORT, () => {
   console.log(`App is running on ${PORT}`);

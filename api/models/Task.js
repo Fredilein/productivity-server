@@ -1,12 +1,14 @@
 let mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-let taskSchema = mongoose.Schema({
+let taskSchema = Schema({
   title: {
     type: String,
     required: true
   },
-  category: {
-    type: String
+  slot: {
+    type: Schema.Types.ObjectId,
+    ref: 'Slot'
   },
   completed: {
     type: Boolean,

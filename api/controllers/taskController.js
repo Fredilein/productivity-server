@@ -1,4 +1,5 @@
 const Task = require('../models/Task');
+const Slot = require('../models/Slot');
 
 exports.allTasks = async (_, res) => {
   try {
@@ -13,9 +14,13 @@ exports.addTask = async (req, res) => {
   try {
     const task = new Task({
       title: req.body.title,
-      category: req.body.category
+      slot: req.body.slot
     });
     let newTask = await task.save();
+
+    Slot.update({ _id: req.body.slot },
+                { $push: { tasks: newTask._id }}).exec();
+
     res.status(200).json({ data: newTask });
   } catch (err) {
     res.status(500).json({ error: err });

@@ -2,7 +2,9 @@ const Category = require('../models/Category');
 
 exports.allCategories = async (_, res) => {
   try {
-    let categories = await Category.find();
+    let categories = await Category.find()
+                                    .populate({ path: 'slots', select: 'tasks day' })
+                                    .exec();
     res.status(200).json(categories);
   } catch (err) {
     res.status(500).json(err);
