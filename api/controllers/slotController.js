@@ -5,7 +5,7 @@ exports.allSlots = async (_, res) => {
   try {
     let slots = await Slot.find()
                           .populate({ path: 'category', select: 'title' })
-                          .populate({ path: 'tasks', select: 'title completed' });
+                          .populate({ path: 'tasks', select: 'title completed', options: { sort: { completed: 1, created: -1 }}});
     res.status(200).json(slots);
   } catch (err) {
     res.status(500).json(err);
