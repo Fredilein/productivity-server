@@ -1,0 +1,2 @@
+{"_id":{"$oid":"609af159ae0bab77250bcdea"},"tasks":[{"$oid":"609af5b0e1a4fc7d089df6e0"},{"$oid":"609af98d8f8bb67eb6d3ab95"},{"$oid":"609b19982dca5da74582b394"}],"category":{"$oid":"609af0d07d207f768b679d48"},"day":{"$numberInt":"1"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609b19592dca5da74582b393"},"tasks":[{"$oid":"609b19a02dca5da74582b395"},{"$oid":"609b92282dca5da74582b396"},{"$oid":"609b925a2dca5da74582b397"}],"category":{"$oid":"609b193e2dca5da74582b392"},"day":{"$numberInt":"2"},"__v":{"$numberInt":"0"}}

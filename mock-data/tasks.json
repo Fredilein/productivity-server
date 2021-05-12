@@ -1,0 +1,6 @@
+{"_id":{"$oid":"609af5b0e1a4fc7d089df6e0"},"completed":false,"created":{"$date":{"$numberLong":"1620768132899"}},"title":"Itsa task","slot":{"$oid":"609af159ae0bab77250bcdea"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609af98d8f8bb67eb6d3ab95"},"completed":false,"created":{"$date":{"$numberLong":"1620768431618"}},"title":"And another task","slot":{"$oid":"609af159ae0bab77250bcdea"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609b19982dca5da74582b394"},"completed":false,"created":{"$date":{"$numberLong":"1620776434137"}},"title":"Work on important stuff instead of this","slot":{"$oid":"609af159ae0bab77250bcdea"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609b19a02dca5da74582b395"},"completed":true,"created":{"$date":{"$numberLong":"1620776434137"}},"title":"I already did this task","slot":{"$oid":"609b19592dca5da74582b393"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609b92282dca5da74582b396"},"completed":false,"created":{"$date":{"$numberLong":"1620776434137"}},"title":"Wtf am I doing","slot":{"$oid":"609b19592dca5da74582b393"},"__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"609b925a2dca5da74582b397"},"completed":true,"created":{"$date":{"$numberLong":"1620776434137"}},"title":"Use Svelte","slot":{"$oid":"609b19592dca5da74582b393"},"__v":{"$numberInt":"0"}}
