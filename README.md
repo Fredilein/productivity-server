@@ -12,6 +12,7 @@ E.g. in MongoDB Compass (GUI), create collections `categories`, `slots` and `tas
 
 3. Start server
 ```
+npm i -g nodemon    # Not in package.json
 npm install
 npm run start:server
 ```
