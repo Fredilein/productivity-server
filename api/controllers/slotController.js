@@ -12,11 +12,14 @@ exports.allSlots = async (_, res) => {
   }
 };
 
+// TODO Some input validation, not just here lol
 exports.addSlot = async (req, res) => {
   try {
     const slot = new Slot({
       category: req.body.category,
-      day: req.body.day
+      day: req.body.day,
+      start_time: req.body.start_time,
+      end_time: req.body.end_time
     });
     let newSlot = await slot.save();
 
