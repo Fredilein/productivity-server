@@ -1,5 +1,15 @@
 # Productivity Server
 
+## Model rn
+- **Task**: Title, slot, completed
+- **Category**: Just holds title
+- **Slot**: Holds start/end time, weekday, tasks
+  - Problem if actual date in slot => unlimited slots
+  - Sol?: Move weekday and time to category (better call it zone or smth), create slot docs with actual date on-the-fly when a task is moved/created to a corresponding category 
+
+## TODO
+- [ ] Change model to work with actual dates.
+
 ## Get going
 
 1. Start MongoDB service
